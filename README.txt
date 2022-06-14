@@ -27,6 +27,18 @@ project. Meaning:
 
 *** SCREEN COMMANDER IS NO LONGER ACTIVELY MAINTAINED. ***
 
+Compiling with Xcode
+--------------------
+
+After cloning the repository, run the following command to retrieve the
+required submodules:
+
+	git submodule update --init --recursive
+
+Once that command completes, open the "Screen Commander.xcworkspace" file
+with Xcode (version 13.4.1 or later). You should now be be able to build
+and run the application.
+
 LICENSE
 =======
 
