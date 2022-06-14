@@ -18,8 +18,6 @@
 		475536601E655A8300C5E072 /* NSScreen+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4755365F1E655A8300C5E072 /* NSScreen+Additions.swift */; };
 		475536621E65616E00C5E072 /* BlankedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475536611E65616E00C5E072 /* BlankedScreen.swift */; };
 		47D31ADF1E6E7FA7005C44AB /* BlankedScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D31ADE1E6E7FA7005C44AB /* BlankedScreenSpec.swift */; };
-		47D31AE11E6E7FCC005C44AB /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47D31ADB1E6E7F95005C44AB /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		47D31AE21E6E7FCC005C44AB /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47D31AD81E6E7F7A005C44AB /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		47ED1E381E6609C300C830DB /* BlankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED1E371E6609C300C830DB /* BlankingView.swift */; };
 		47ED1E401E662AF800C830DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED1E3F1E662AF800C830DB /* AppDelegate.swift */; };
 		47ED1E4E1E6633F300C830DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47ED1E4D1E6633F300C830DB /* Assets.xcassets */; };
@@ -40,6 +38,8 @@
 		47FB0D6B1E6FC03800FAF7C2 /* NSWindowController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB0D6A1E6FC03800FAF7C2 /* NSWindowController+Additions.swift */; };
 		B78BAE9228580D7B002C3F03 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78BAE9128580D7B002C3F03 /* SwiftyUserDefaults.framework */; };
 		B78BAE9328580D7B002C3F03 /* SwiftyUserDefaults.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B78BAE9128580D7B002C3F03 /* SwiftyUserDefaults.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B78BAE9928590512002C3F03 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78BAE9828590512002C3F03 /* Nimble.framework */; };
+		B78BAE9C28590734002C3F03 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78BAE9B28590734002C3F03 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +66,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				47D31AE11E6E7FCC005C44AB /* Quick.framework in CopyFiles */,
-				47D31AE21E6E7FCC005C44AB /* Nimble.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +115,6 @@
 		4755365E1E654EAD00C5E072 /* Screen Commander.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Screen Commander.entitlements"; sourceTree = "<group>"; };
 		4755365F1E655A8300C5E072 /* NSScreen+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSScreen+Additions.swift"; sourceTree = "<group>"; };
 		475536611E65616E00C5E072 /* BlankedScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankedScreen.swift; sourceTree = "<group>"; };
-		47D31AD81E6E7F7A005C44AB /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
-		47D31ADB1E6E7F95005C44AB /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		47D31ADE1E6E7FA7005C44AB /* BlankedScreenSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankedScreenSpec.swift; sourceTree = "<group>"; };
 		47E527B51E6E1B9100F13BBB /* Screen Commander Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Screen Commander Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E527B91E6E1B9100F13BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,6 +141,8 @@
 		47FB0D711E7210CD00FAF7C2 /* swiftgen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = swiftgen.sh; sourceTree = "<group>"; };
 		47FB0D721E7210CD00FAF7C2 /* version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
 		B78BAE9128580D7B002C3F03 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78BAE9828590512002C3F03 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78BAE9B28590734002C3F03 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +159,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78BAE9C28590734002C3F03 /* Quick.framework in Frameworks */,
+				B78BAE9928590512002C3F03 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +307,9 @@
 		47F242151E67D2DB001F8CA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B78BAE9B28590734002C3F03 /* Quick.framework */,
+				B78BAE9828590512002C3F03 /* Nimble.framework */,
 				B78BAE9128580D7B002C3F03 /* SwiftyUserDefaults.framework */,
-				47D31ADB1E6E7F95005C44AB /* Quick.framework */,
-				47D31AD81E6E7F7A005C44AB /* Nimble.framework */,
 				47F242181E67D2EB001F8CA9 /* WebKit.framework */,
 				47F242161E67D2DB001F8CA9 /* libswiftWebKit.tbd */,
 			);
@@ -814,10 +814,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "${TARGET_NAME}/Supporting Files/${TARGET_NAME:c99extidentifier}-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -842,10 +839,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "${TARGET_NAME}/Supporting Files/${TARGET_NAME:c99extidentifier}-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

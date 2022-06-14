@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/briankc/Development/Projects/Screen Commander/Screen Commander.xcodeproj">
+      location = "self:Screen Commander.xcodeproj">
    </FileRef>
 </Workspace>
