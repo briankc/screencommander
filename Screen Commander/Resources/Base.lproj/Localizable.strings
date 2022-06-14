@@ -1,0 +1,42 @@
+/*
+ * This file is part of the Screen Commander project.
+ * Copyright (c) 2017-2022 Brian Christensen
+ * Author: Brian Christensen <bkc@xensen.net>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * In addition, this program is also subject to certain additional terms.
+ * You should have received a copy of these additional terms immediately
+ * following the terms and conditions of the GNU General Public License
+ * which accompanied this program.  If not, please request a copy in
+ * writing from the Author at the above e-mail address.
+ */
+
+/* Error alert displayed when there's a blanking error */
+"blanking_error.alert.title" = "Unable to blank display";
+"blanking_error.alert.message" = "Screen Commander was unable to blank the display due to the following error:\n\n “%@”";
+
+/* Error alert displayed when unable to set login item */
+"launchAtLogin_error.alert.title" = "Unable to %@ login item";
+"launchAtLogin_error.alert.message" = "Screen Commander was unable to %@ itself as a login item with the system due to an unknown error.";
+"launchAtLogin_error.alert.enable" = "enable";
+"launchAtLogin_error.alert.disable" = "disable";
+"launchAtLogin_error.alert.register" = "register";
+"launchAtLogin_error.alert.unregister" = "unregister";
+
+/* One-time login launch prompt */
+"launchAtLogin_prompt.alert.title" = "Should Screen Commander launch automatically and become available in your Mac's menubar when you log in?";
+"launchAtLogin_prompt.alert.message" = "You can always change this setting later by opening Screen Commander's preferences in the menubar.";
+"launchAtLogin_prompt.alert.primaryButton" = "Launch Automatically At Login";
+"launchAtLogin_prompt.alert.secondaryButton" = "Don't Launch At Login";

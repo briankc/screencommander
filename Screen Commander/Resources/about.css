@@ -1,0 +1,196 @@
+/*
+ * This file is part of the Screen Commander project.
+ * Copyright (c) 2017-2022 Brian Christensen
+ * Author: Brian Christensen <bkc@xensen.net>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * In addition, this program is also subject to certain additional terms.
+ * You should have received a copy of these additional terms immediately
+ * following the terms and conditions of the GNU General Public License
+ * which accompanied this program.  If not, please request a copy in
+ * writing from the Author at the above e-mail address.
+ */
+
+/* Reset */
+*, html, body, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-width: 100vw;
+	min-height: 100vh;
+	max-width: 100vw;
+	max-height: 100vh;
+}
+
+body {
+	background-color: none;/*#fffdf8;*/
+	font: 1em "Avenir Next", Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+	body { color: #eee; }
+}
+
+h1 {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-top: 0.75em;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 0.8em;
+	font-weight: 600;
+	color: #222;
+	line-height: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+	h3 { color: #eee; }
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+a, a:visited {
+	color: #4cc325;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #444;
+}
+
+#content {
+	text-align: center;
+	padding: 1.5em;
+}
+
+#footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 29px;
+	padding-bottom: 15px;
+}
+
+#credits {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+#credits p {
+	font-size: 0.8em;
+}
+
+#gnu-license {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#gnu-license p {
+	text-align: left;
+	font-family: monospace;
+	font-size: 0.8em;
+}
+
+#company {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+#company p {
+	font-size: 0.9em;
+}
+
+p.meta {	
+	font-size: 0.7em;
+	font-weight: 600;
+}
+
+#company p.meta {
+	margin-top: 1em;
+}
+
+#acknowledgements {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#acknowledgements p {
+	font-size: 0.8em;
+	font-weight: 600;
+}
+
+#footer p {
+	font-size: small;
+	text-align: center;
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.95;
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+@media (prefers-color-scheme: dark) {
+	.overlay { background-color: #000; }
+}
+
+.overlay-close {
+	position: fixed;
+	top: 1em;
+	left: 1em;
+}
+
+.overlay-content {
+	padding: 2em;
+}
+
+.overlay-content p {
+	padding: 1em;
+	font-size: 0.9em;
+}
+
+.overlay-content a {
+	font-weight: 600;
+}
+
+.overlay-content p.byline {
+	padding-top: 0.1em;
+}
+
+.overlay-content p.license {
+	font-family: monospace;
+	font-size: 0.8em;
+}

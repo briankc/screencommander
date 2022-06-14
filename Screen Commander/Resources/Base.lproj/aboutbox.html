@@ -1,0 +1,157 @@
+<!--
+/*
+ * This file is part of the Screen Commander project.
+ * Copyright (c) 2017-2022 Brian Christensen
+ * Author: Brian Christensen <bkc@xensen.net>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * In addition, this program is also subject to certain additional terms.
+ * You should have received a copy of these additional terms immediately
+ * following the terms and conditions of the GNU General Public License
+ * which accompanied this program.  If not, please request a copy in
+ * writing from the Author at the above e-mail address.
+ */
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>About Screen Commander</title>
+
+	<link rel="stylesheet" href="../about.css" type="text/css"/>
+</head>
+
+<body>
+	<div id="content">
+		<div id="app">
+			<img src="../app_icon-256.png" width="96px" height="96px"/>
+
+			<h1>Screen Commander</h1>
+			<h2>Version <span id="_version">0.0</span></h2>
+			<h3>(<span id="_build" ondblclick="swapContent('_bundleVersion', '_build')">0</span><span id="_bundleVersion" ondblclick="swapContent('_bundleVersion', '_build')" style="display: none;">1</span>)</h3>
+		</div>
+
+		<div id="gnu-license">
+			<p>
+				This program is free software: you can redistribute it and/or modify
+				it under the terms of the GNU General Public License as published by
+				the Free Software Foundation, either version 3 of the License, or
+				(at your option) any later version.
+				<br/><br/>
+				This program is distributed in the hope that it will be useful,
+				but WITHOUT ANY WARRANTY; without even the implied warranty of
+				MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+				GNU General Public License for more details.
+				<br/><br/>
+				You should have received a copy of the GNU General Public License
+				along with this program.  If not, see <a href="http://www.gnu.org/licenses/">&lt;http://www.gnu.org/licenses/&gt;</a>.
+				<br/><br/>
+				This program is also subject to certain additional 
+				terms. You should have received a copy of these additional terms 
+				immediately following the terms and conditions of the GNU General Public 
+				License which accompanied this program.  If not, please request a copy in 
+				writing from <a href="mailto:bkc@xensen.net">&lt;bkc@xensen.net&gt;</a>.
+			</p>
+		</div>
+
+		<div id="acknowledgements">
+			<p><a href="javascript:void(0)" onclick="showAcknowledgements()">Acknowledgements</a></p>
+		</div>
+	</div>
+
+	<div id="footer">
+		<p>&copy;2017-2022 Brian Christensen</p>
+	</div>
+
+	<div id="acknowledgements-content" class="overlay">
+		<div class="overlay-close"><a href="javascript:void(0)" onclick="closeAcknowledgements()">✖️</a></div>
+		<div class="overlay-content">
+			<h4>Acknowledgements</h4>
+			<p>The following fine open source ingredients are included in Screen Commander:</p>
+			<p><a href="https://github.com/radex/SwiftyUserDefaults">SwiftyUserDefaults</a></p>
+			<p class="byline">by Radosław Pietruszewski &amp; Łukasz Mróz</p>
+			<p class="license">
+				The MIT License (MIT)
+				<br/><br/>
+				Copyright (c) 2015-present Radosław Pietruszewski, Łukasz Mróz
+				<br/><br/>
+				Permission is hereby granted, free of charge, to any person obtaining a copy
+				of this software and associated documentation files (the "Software"), to deal
+				in the Software without restriction, including without limitation the rights
+				to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+				copies of the Software, and to permit persons to whom the Software is
+				furnished to do so, subject to the following conditions:
+				<br/><br/>
+				The above copyright notice and this permission notice shall be included in all
+				copies or substantial portions of the Software.
+				<br/><br/>
+				THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+				IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+				FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+				AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+				LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+				OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+				SOFTWARE.
+			</p>
+			<p>These excellent tools and libraries were used during the making of Screen Commander
+				but are not actually included in this binary:</p>
+			<p><a href="https://github.com/Quick">Quick and Nimble</a></p>
+			<p class="byline">by Brian Gesiak &amp; contributors</p>
+			<p><a href="https://github.com/SwiftGen/SwiftGen">SwiftGen</a></p>
+			<p class="byline">by Olivier Halligon &amp; contributors</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var query = window.location.search.substring(1)
+		var parameters = decodeURIComponent(query).split("&")
+
+		for (var i = 0; i < parameters.length; i++) {
+			var parts = parameters[i].split("=")
+			var element = document.getElementById("_" + parts[0])
+
+			if (element) {
+				element.innerHTML = parts[1]
+			}
+		}
+	
+		function reset() {
+			closeAcknowledgements()
+		}
+
+		function showAcknowledgements() {
+			var content = document.getElementById("acknowledgements-content")
+			
+			content.style.display = "block"
+			content.scrollTop = 0
+		}
+
+		function closeAcknowledgements() {
+			document.getElementById("acknowledgements-content").style.display = "none"
+		}
+	
+		function swapContent(firstId, secondId) {
+			var first = document.getElementById(firstId)
+			var second = document.getElementById(secondId)
+			var swap = first.innerHTML
+			
+			first.innerHTML = second.innerHTML
+			second.innerHTML = swap
+		}
+	</script>
+</body>
+
+</html>
